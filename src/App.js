@@ -13,6 +13,11 @@ function App() {
   const [mappings, setMappings] = useState({});
   const [values, setValues] = useState({});
 
+  useEffect(() => {
+    console.log(mappings);
+    console.log(values);
+  }, [mappings, values]);
+
   // Load visibilitySettings cache
   useEffect(() => {
     const cache = localStorage.getItem('visibilitySettings');

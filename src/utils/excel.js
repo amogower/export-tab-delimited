@@ -8,7 +8,7 @@ export function handleTemplate(file) {
 
 function formatDate(date) {
   let month = '' + (date.getMonth() + 1);
-  let day = '' + date.getDate();
+  let day = '' + (date.getDate() - 1);
   const year = date.getFullYear();
 
   if (month.length < 2)
